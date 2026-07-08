@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: hms-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4800:80"
+    restart: unless-stopped

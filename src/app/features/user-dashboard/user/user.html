@@ -1,0 +1,20 @@
+<div class="container-fluid p-0">
+    <div class="row vh-100 g-0">
+        <div class="col-md-3 bg-dark p-0">
+            <app-side-bar></app-side-bar>
+        </div>
+        <div class="col-md-9 p-0">
+                <main class="vh-100">
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h4 class="mb-0 p-3">{{ pageTitle }}</h4>
+                    </div>
+                    <div class="card-body">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+
+            </main>
+            </div>
+    </div>
+</div>

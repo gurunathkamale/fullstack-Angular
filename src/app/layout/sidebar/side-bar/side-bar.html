@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="bg-dark text-white p-3 text-center vh-100">
+        <div *ngFor="let item of menuItems" [routerLink]="item.route" routerLinkActive="active-menu"
+            [routerLinkActiveOptions]="{ exact: item.route === '/dashboard' }"
+            class="profile-item bg-light text-dark p-3 mb-2 ">
+            {{ item.label }}
+        </div>
+        <div (click)="logout()" class="profile-item bg-light text-dark p-3 mb-2 ">
+            LogOut
+        </div>
+
+    </div>
+</div>

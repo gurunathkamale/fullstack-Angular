@@ -1,0 +1,43 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 fixed-top">
+<div class="container-fluid p-0 ">
+    
+      <a class="navbar-brand text-white" routerLink="/login">MyApp</a>
+
+      <div class="ms-auto">
+        <a class="btn btn-outline-primary me-2" routerLink="/login">
+          SignIn
+        </a>
+        <a class="btn btn-outline-primary" routerLink="/register">
+          SignUp
+        </a>
+      </div>
+  
+    </div>
+</nav>
+ -->
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 fixed-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand text-white" routerLink="/">MyApp</a>
+
+    <div class="ms-auto">
+      <a
+        class="btn btn-outline-primary me-2"
+        routerLink="/login"
+        routerLinkActive="btn-primary text-white"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Sign In
+      </a>
+
+      <a
+        class="btn btn-outline-primary"
+        routerLink="/register"
+        routerLinkActive="btn-primary text-white"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Sign Up
+      </a>
+    </div>
+
+  </div>
+</nav>

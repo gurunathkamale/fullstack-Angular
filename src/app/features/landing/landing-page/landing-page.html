@@ -1,0 +1,30 @@
+
+
+<div class="d-flex flex-column min-vh-100">
+
+  <app-navbar></app-navbar>
+
+  <main class="flex-grow-1">
+    <div class="container-fluid p-0">
+      <div class="bg-image vh-100 d-flex flex-column justify-content-center align-items-center">
+
+         @if (router.url === '/') {
+    <div class="text-center text-white">
+      <h1>Welcome To HMS</h1>
+      <h6>Explore Our Product</h6>
+    </div>
+  }
+
+
+        <!-- Child routes (Login/Register) render here -->
+         
+ 
+        <router-outlet></router-outlet>
+
+      </div>
+    </div>
+  </main>
+
+  <app-footer></app-footer>
+
+</div>
