@@ -32,7 +32,7 @@ export class Login {
 
     this.authService.login(this.loginForm.value).subscribe({
       next: (res: any)=>{
-        console.log(res)
+        // console.log(res)
 
         localStorage.setItem("token",res.access_token)
 

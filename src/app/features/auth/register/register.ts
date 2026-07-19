@@ -30,7 +30,7 @@ export class Register {
 
     this.authservice.register(this.registerForm.value).subscribe({
       next:(res:any)=>{
-        console.log(res)
+        // console.log(res)
         alert("Registration Successful")
         this.registerForm.reset()
       },
